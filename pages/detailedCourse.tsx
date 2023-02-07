@@ -10,7 +10,10 @@ import {
   StackDivider,
   CardFooter,
   Button,
+  Image,
+  Divider,
 } from "@chakra-ui/react";
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import {
   List,
   ListItem,
@@ -21,8 +24,9 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export default function detailedCourse() {
+export default function DetailedCourse() {
    return (
+
     <Box
       height={{ base: "100%", md: "50%", xl: "25%" }}
       width={["95%"]}
@@ -34,19 +38,31 @@ export default function detailedCourse() {
       borderRadius="lg"
       borderColor="lightgray"
       borderTopWidth="10px"
-      borderTopColor="black"
-    >
-      <Card>
-        <CardHeader>
-          <Heading size="lg">Detailed Course Syllabus</Heading>
+      borderTopColor="blue.500"
+    > 
+       <Tabs variant='soft-rounded' colorScheme='green'>
+  <TabList>
+    <Tab>Quarter1(Core)</Tab>
+    <Tab>Quarter2(Core)</Tab>
+    <Tab>Quarter3(Core)</Tab>
+    <Tab>Quarter4(Core)</Tab>
+    
+  </TabList>
+  <TabPanels>
+    <TabPanel>
+      <Card w='100%' variant="filled" fill='blue.50'>
+        <CardHeader w='100%' h='4'
+         bgGradient='linear(to-b, blue.300, blue.600,blue.700)'> 
+        
+      
         </CardHeader>
 
         <CardBody>
           <Stack divider={<StackDivider />} spacing="4">
-            <Box>
-              <Heading size="lg">Quarter I (Core)</Heading>
+            
+              
               <Heading size="md" >
-                CS-101: Object-Oriented Programming using TypeScript
+                Object-Oriented Programming using TypeScript
               </Heading>
               <Text pt="2" fontSize="sm">
                 Duration: 13 Weeks
@@ -85,6 +101,7 @@ export default function detailedCourse() {
                   Learn CSS Intro by Hira Khan (Watch Recorded Videos)
                 </Link>
               </Text>
+              <Divider/>
               <Heading size="md">Web 3.0 and Metaverse Theory</Heading>
               <Text
                 pt="2"
@@ -124,6 +141,7 @@ export default function detailedCourse() {
                   Virtual and Augmented Metaverse User Guide
                 </Link>
               </Text>
+              <Divider/>
               <Heading size="md">
                 Fundamentals of JavaScript (ECMAScript 2022 Language
                 Specification)(Core)
@@ -182,6 +200,8 @@ export default function detailedCourse() {
                   Intro to Node.js, .mjs files, Modules, NPM, import, export,
                   and using external modules with npm:
                   https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing
+                  </ListItem>
+                 <ListItem>
                   How to accept user input in your Node.js JavaScript programs,
                   this will allow us to create interactive Node.js console
                   programs using prompt-sync library. The last example in this
@@ -228,6 +248,7 @@ export default function detailedCourse() {
                   https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg
                 </ListItem>
               </OrderedList>
+              <Divider/>
               <Heading size="md">
                 Object-Oriented Programming with TypeScript
               </Heading>
@@ -285,7 +306,7 @@ export default function detailedCourse() {
                   Code Exercises
                 </Link>
               </Text>
-              <Heading size="sm">TypeScript Quizzes</Heading>
+              <Heading size="md">TypeScript Quizzes</Heading>
               <Text
                 pt="2"
                 color="gray"
@@ -303,6 +324,8 @@ export default function detailedCourse() {
                 {" "}
                 TypeScript Professional Proficiency Quiz
               </Text>
+
+              <Divider/>
               <Heading size="md">
                 {" "}
                 Fundamentals of Version Control with Git
@@ -366,7 +389,7 @@ export default function detailedCourse() {
                 fontSize="md"
               >
                 <Link href="http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences">
-                  Git brabch,fork, clone,rebase difference
+                  Git branch,fork, clone,rebase difference
                 </Link>
               </Text>
               <Text
@@ -428,9 +451,49 @@ export default function detailedCourse() {
               >
                 Git Quiz before the start of Quarter 2 Total Questions: 60,
                 Total Time: 75 minutes
-              </Text>  </Box> </Stack>
+              </Text>               </Stack>
               </CardBody>
             </Card>
+    </TabPanel>
+    <TabPanel>
+    
+      <Card w='100%' variant="filled" fill='blue.50'>
+        <CardHeader w='100%' h='4'
+         bgGradient='linear(to-b, blue.300, blue.600,blue.700)'> 
+           
+        </CardHeader>
+        <CardBody>
+ quarter 2
+        </CardBody>
+</Card>
+    </TabPanel>
+    <TabPanel>
+    
+      <Card w='100%' variant="filled" fill='blue.50'>
+        <CardHeader w='100%' h='4'
+         bgGradient='linear(to-b, blue.300, blue.600,blue.700)'> 
+           
+        </CardHeader>
+        <CardBody>
+ quarter 3
+        </CardBody>
+</Card>
+    </TabPanel>
+    <TabPanel>
+    
+      <Card w='100%' variant="filled" fill='blue.50'>
+        <CardHeader w='100%' h='4'
+         bgGradient='linear(to-b, blue.300, blue.600,blue.700)'> 
+           
+        </CardHeader>
+        <CardBody>
+ quarter 4
+        </CardBody>
+</Card>
+    </TabPanel>
+  </TabPanels>
+</Tabs>
+      
              </Box>
                  
            );

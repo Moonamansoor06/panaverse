@@ -3,9 +3,9 @@ import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
-    BreadcrumbSeparator,
+    Spacer,
   } from '@chakra-ui/react'
-  import { Box,Text } from "@chakra-ui/react"
+  import { Box,Text,Flex } from "@chakra-ui/react"
   import Image from 'next/image'
 
 export default function Nav(){
@@ -13,11 +13,11 @@ export default function Nav(){
     return(
 
 <div >
-     <Box  height={{ base: '100%',  md: '50%', xl: '25%',  }} width={['100%']}
-      display='flex'  alignContent='space-between' justifyContent='space-between '
+     <Flex direction={{ base: 'column', lg: 'row' }}
       bgGradient='linear(to-r, green.200, blue.500)'> 
       
     <Image src='/logo.png' alt="" width={80} height={80}/>
+    <Spacer/>
 <Breadcrumb > 
   <BreadcrumbItem>
     <BreadcrumbLink href='/'>Home</BreadcrumbLink>
@@ -28,16 +28,19 @@ export default function Nav(){
   <BreadcrumbItem>
     <BreadcrumbLink href='/detailedCourse '>Detailed Courses</BreadcrumbLink>
   </BreadcrumbItem>
+  <BreadcrumbItem>
+    <BreadcrumbLink href='/specializedTracks '>Specialized Tracks</BreadcrumbLink>
+  </BreadcrumbItem>
 
   
 </Breadcrumb>
-</Box>
+</Flex>
 <Box height={{ base: '100%',  md: '50%', xl: '25%',  }} width={['100%']} bgGradient='linear(to-r, green.200, blue.500)' >
    
 <Text
   bgGradient='linear(to-l, #011f4b,	#2a623d)'
   bgClip='text'
-  fontSize='6xl'
+  fontSize={['4xl','6xl','6xl']}
   fontWeight='extrabold'
   align='center'
 >
@@ -46,8 +49,8 @@ Certified Web 3.0 and Metaverse Developer
 <Text
   bgGradient='linear(to-l, #011f4b,	#2a623d)'
   bgClip='text'
-  fontSize='2xl'
-  fontWeight='extrabold'
+  fontSize={['2xl','4xl','4xl']}
+  fontWeight='bold'
   align='center'
 >
 A Nationwide Program in Karachi, Lahore, Islamabad, and Peshawar
@@ -55,8 +58,8 @@ A Nationwide Program in Karachi, Lahore, Islamabad, and Peshawar
 <Text
   bgGradient='linear(to-l, #011f4b,	#2a623d)'
   bgClip='text'
-  fontSize='xl'
-  fontWeight='extrabold'
+  fontSize={['2xl','4xl','4xl']}
+  fontWeight='bold'
   align='center'
 >
 Getting Ready for the Next Generation and Future of the Internet - Join a 13 Trillion Dollar Industry with 5 Billion Users

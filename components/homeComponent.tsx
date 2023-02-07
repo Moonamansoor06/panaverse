@@ -1,34 +1,33 @@
 "use-client"
 
-  import { Box,Heading,Text,Card,Stack,CardBody,CardFooter,Button } from "@chakra-ui/react"
+  import { Box,Heading,Text,Card,Stack,CardBody,CardFooter,Button, Flex, Spacer } from "@chakra-ui/react"
   import ImgRotator from '../components/imgRotator'
 
 export default function HomeComponent(){
     
     return(
       <Box  height={{ base: '100%',  md: '50%', xl: '25%',  }} width={['95%']}
-      display='flex' flexDirection='column' padding='2' margin='8'  
-      borderWidth='1px' borderRadius='lg' borderColor='lightgray' borderTopWidth='10px' borderTopColor='black'> 
+      boxShadow='0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)' padding='2' margin='8'  
+      borderWidth='1px' borderRadius='lg' borderColor='lightgray' borderTopWidth='10px' borderTopColor='blue.500'> 
+<Flex direction={{ base: 'column', lg: 'row' }}>
 
-
-<Card
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
- <ImgRotator />
-  <Stack>
-    <CardBody>
-      <Heading >Need to study Metaverse technology</Heading>
-
-      <Text py='2'>
+<Card w={{"lg": '50%', "sm": '100px'}} variant='outline'>
+<Heading >Need to study Metaverse technology</Heading>
+<Text py='2'>
       The Future of the Web is Web 3.0, Metaverse, and Edge Computing. Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers. The internet is without a doubt the most important technological development in human history. Web3 and metaverse technologies expand the internet as we know it by introducing novel features and advancements. Metaverse will make use of all aspects of modern technology, including 3D, VR, AR, AI, blockchain, cloud computing, voice computing, ambient computing, and more. Citi is the latest Wall Street business to give a positive prognosis for Web 3.0 and the Metaverse, terms used to depict a future internet vision centred on decentralised technologies and virtual worlds. Citi stated in a March 2022 research paper that the metaverse economy might have a total addressable market of up to $13 trillion and five billion people by 2030.
-      </Text>
-    </CardBody>
+      </Text >
+ </Card>
+ <Spacer/>
+ <Card p='2' pt='4' w={{"lg": '50%', "sm": '100px'}}>     
+   <ImgRotator />      
+   </Card>
+   
+   
 
-  </Stack>
-</Card>
-    
+
+ 
+
+    </Flex>
       <Box  height={{ base: '100%',  md: '50%', xl: '25%',  }} width={['100%']}
       alignContent='stretch' justifyContent='stretch'> 
       <Heading>Program of Studies</Heading>
