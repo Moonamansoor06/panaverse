@@ -29,8 +29,8 @@ export default function ImgRotator( { timerLength = 3000 } = {}) {
       src={slides[currIndex]}
       key={currIndex}
       alt=""
-      width={800}
-      height={300}
+      width={750}
+      height={400}
  
     />
     
