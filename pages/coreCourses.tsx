@@ -8,43 +8,34 @@ import {
   CardBody,
   Stack,
   StackDivider,
-  CardFooter,
-  Button,
-  Image,
+
   Divider,
 } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import {
-  List,
   ListItem,
-  ListIcon,
   OrderedList,
-  UnorderedList,
+
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+//import { useRouter } from "next/navigation";
 
 export default function DetailedCourse() {
   return (
     <Box
       height={{ base: "100%", md: "50%", xl: "25%" }}
-      width={["95%"]}
+      width={["100%","100%","100%"]}
       display="flex"
       flexDirection="column"
       padding="2"
-      margin="8"
-      borderWidth="1px"
-      borderRadius="lg"
-      borderColor="lightgray"
-      borderTopWidth="10px"
-      borderTopColor="blue.500"
+      marginTop="8"
+     
     >
-      <Tabs variant="soft-rounded" colorScheme="green">
+      <Tabs variant='enclosed' colorScheme="green">
         <TabList>
-          <Tab>Quarter1(Core)</Tab>
-          <Tab>Quarter2(Core)</Tab>
-          <Tab>Quarter3</Tab>
-          <Tab>Quarter4</Tab>
+          <Tab>Quarter 1</Tab>
+          <Tab>Quarter 2</Tab>
+       
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -56,16 +47,16 @@ export default function DetailedCourse() {
               ></CardHeader>
 
               <CardBody>
-                <Stack divider={<StackDivider />} spacing="4">
+                <Stack >
                   <Heading size="md">
                     Object-Oriented Programming using TypeScript
                   </Heading>
                   <Text pt="2" fontSize="sm">
                     Duration: 13 Weeks
                   </Text>
-                  <Text pt="2" fontSize="md">
+                  <Heading  size="sm">
                     Course Description:
-                  </Text>
+                  </Heading>
                   <Text pt="2" fontSize="md">
                     We will start the program by learning the fundamentals of
                     Object-Oriented programming using JavaScript and TypeScript.
@@ -81,7 +72,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/playlist?list=PLKvqnz8z1zWQ3BALy86tIXICkG874wAc6">
                       Learn HTML by Hira Khan (Watch Recorded Videos)
@@ -91,7 +82,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/playlist?list=PLKvqnz8z1zWQSWIen_zUSEBmtqzPLuRob">
                       Learn CSS Intro by Hira Khan (Watch Recorded Videos)
@@ -103,7 +94,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     Complete Web 3 Assignments included in the Web 3 User Guide
                   </Text>
@@ -111,7 +102,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://docs.google.com/presentation/d/12C1s4UBTlR9nZNEkRE6aAuGeRA3s92jx-8nJKo9jdH4/edit">
                       Introduction to Panaverse DAO
@@ -121,7 +112,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://docs.google.com/presentation/d/1FSbr9aJwO0-fmZHqWy_eHO2N_jwJLmQCy4cG8rd4ctw/edit">
                       Web 3.0 User Guide
@@ -131,7 +122,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://docs.google.com/presentation/d/1ADk87hQ0Etr2PfmN9XH7TQ0CHl6XSP_7JWNUbzPdDNc/edit">
                       Virtual and Augmented Metaverse User Guide
@@ -146,7 +137,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/playlist?list=PLKvqnz8z1zWQdc0NSLknxmxBch5gLOqyo">
                       Learn JavaScript by Zeeshan Hanif (Watch Recorded Videos)
@@ -156,7 +147,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/1800562527/ref=sr_1_4">
                       Chapters 2-6, 13 of JavaScript from Beginner to
@@ -168,7 +159,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional">
                       JavaScript Book Code
@@ -178,7 +169,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/typescript-node-projects/blob/main/getting-started-exercises.md">
                       Getting Started Exercises with JavaScript and Node.js
@@ -253,7 +244,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1_1">
                       Chapters 1-11 of Learning TypeScript: Enhance Your Web
@@ -264,7 +255,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/learn-typescript">
                       Learning Repository
@@ -274,7 +265,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.learningtypescript.com/">
                       In Class Companion projects and articles for Learning
@@ -285,7 +276,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/typescript-node-projects">
                       Homework Project
@@ -296,7 +287,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://profy.dev/article/react-typescript">
                       Minimal TypeScript Crash Course For React With Interactive
@@ -308,7 +299,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     Fundamentals of TypeScript Quiz
                   </Text>
@@ -316,15 +307,14 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     {" "}
                     TypeScript Professional Proficiency Quiz
                   </Text>
                   <Divider />
                   <Heading size="md">
-                    {" "}
-                    Fundamentals of Version Control with Git
+                   Fundamentals of Version Control with Git
                   </Heading>
                   <Text
                     pt="2"
@@ -341,7 +331,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     {" "}
                     Chapters 1, 2, 3, and 4 Learn Version Control with Git: A
@@ -352,7 +342,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     will also cover these readings:
                   </Text>
@@ -410,7 +400,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://try.github.io/levels/1/challenges/1">
                       For Practice
@@ -462,12 +452,12 @@ export default function DetailedCourse() {
                     APIs using Next.js 13 and Cloud Development Kit (CDK) for
                     Terraform
                   </Heading>
-                  <Text pt="2" fontSize="sm">
+                  <Text pt="2" size="md">
                     Duration: 13 Weeks
                   </Text>
-                  <Text pt="2">Course Description :</Text>
+                  <Heading size='md'>Course Description :</Heading>
 
-                  <Text pt="2" fontSize="sm">
+                  <Text pt="2" size="md">
                     The objective of this course is to teach participants to
                     develop customer-facing planet-scale Websites, Full-Stack
                     Apps and templates, Dashboards, and Muti-Cloud Serverless
@@ -479,15 +469,15 @@ export default function DetailedCourse() {
                     Compatible), AWS Serverless Technologies, and Cloud
                     Development Kit for Terraform (CDKTF).
                   </Text>
-                  <Heading size="sm">Course Outline</Heading>
-                  <Text pt="2" fontSize="md">
+                  <Heading m='2' size="md">Course Outline</Heading>
+                  <Heading size="sm">
                     Next.js 13 Web Development
-                  </Text>
+                  </Heading>
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://beta.nextjs.org/docs">
                       Next 13 Official Documentation
@@ -497,7 +487,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://beta.reactjs.org/learn">
                       Latest Learn React Official Website
@@ -507,21 +497,21 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/learn-nextjs">
                       Learn Next.js 13 Learning Repo
                     </Link>
                   </Text>
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     Next.js 13 using Chakra UI (Remote Zoom Class)
-                  </Text>
+                  </Heading>
 
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://chakra-ui.com/getting-started">
                       Chakra UI Docs
@@ -531,23 +521,23 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.freecodecamp.org/news/css-flexbox-complete-guide/">
                       CSS Flexbox Explained – Complete Guide to Flexible
                       Containers and Flex Items
                     </Link>
                   </Text>
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     UI/UX Design with Figma, TailwindCSS, and Chakra UI (Remote
                     Zoom Class)
-                  </Text>
+                  </Heading>
 
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.amazon.com/Designing-Prototyping-Interfaces-Figma-interactive/dp/180056418X/ref=sr_1_1_sspa">
                       Designing and Prototyping Interfaces with Figma: Learn
@@ -560,7 +550,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.figma.com/community/file/768809027799962739">
                       Figma Design Kit for TailwindCSS
@@ -570,21 +560,21 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.figma.com/community/file/971408767069651759">
                       Chakra UI Figma Kit
                     </Link>
                   </Text>
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     API Routes with Next.js
-                  </Text>
+                  </Heading>
 
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://nextjs.org/docs/api-routes/introduction">
                       API Routes
@@ -594,7 +584,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://codevoweb.com/build-a-trpc-crud-api-example-with-next-js/">
                       Build a tRPC CRUD API Example with Next.js
@@ -604,22 +594,22 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps/">
                       Stop building REST APIs for your Next.js apps, use tRPC
                       instead
                     </Link>
                   </Text>
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     SQL and Prisma
-                  </Text>
+                  </Heading>
 
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres">
                       Start from scratch with relational databases
@@ -629,7 +619,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/watch?v=5hzZtqCNQKk">
                       SQL For Beginners Video Tutorial
@@ -639,36 +629,36 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.freecodecamp.org/news/dbms-and-sql-basics/">
                       Database Management Systems and SQL – Tutorial for
                       Beginners
                     </Link>
                   </Text>
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     Next.js 13 using TailwindCSS (Remote Zoom Class)
-                  </Text>
+                  </Heading>
 
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/">
                       Modern CSS with Tailwind, Second Edition by Noel Rappin
                     </Link>
                   </Text>
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     AWS Application Composer (Remote Zoom Class)
-                  </Text>
+                  </Heading>
 
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/watch?v=BujE_tik5r8">
                       What is AWS Application Composer?
@@ -678,7 +668,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/watch?v=p411uh363jQ">
                       Event-driven apps with AWS Application Composer
@@ -688,7 +678,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://aws.amazon.com/application-composer/">
                       Visually design and build serverless applications quickly
@@ -703,7 +693,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/watch?v=BujE_tik5r8">
                       What is AWS Application Composer?
@@ -713,7 +703,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">
                       AWS Free Tier
@@ -736,28 +726,28 @@ export default function DetailedCourse() {
                     https://pages.awscloud.com/adoptf90d_GLOBAL_POC-credits.html
                   </Text>
 
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     Multi-Cloud GraphQL Serverless API Development with Cloud
                     Development Kit for Terraform (CDKTF) (Remote Zoom Class)
-                  </Text>
+                  </Heading>
 
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/learn-multicloud-api-development">
                       Learn Multicloud Serverless API Development using CDK
                       Terraform in Baby Steps
                     </Link>
                   </Text>
-                  <Text pt="2">Web 2.0 Projects</Text>
+                  <Heading size="sm">Web 2.0 Projects</Heading>
                   <Text
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/nextjs-projects">
                       Next.js Projects
@@ -767,7 +757,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/styling-nextjs-projects">
                       Styling Next.js Projects using TailwindCSS and Chakra UI
@@ -778,7 +768,7 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/ogzhanolguncu/min-todo">
                       Todo Fullstack App
@@ -788,16 +778,16 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://www.youtube.com/watch?v=nzJsYJPCc80">
                       Build a Twitter Clone
                     </Link>
                   </Text>
 
-                  <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                     Earn While You Learn Projects
-                  </Text>
+                  </Heading>
                   <Text pt="2" fontSize="md">
                     Build Full-Stack Next.js 13 Jamstack Templates
                   </Text>
@@ -814,16 +804,16 @@ export default function DetailedCourse() {
                     pt="2"
                     color="gray"
                     textDecoration="underline"
-                    fontSize="lg"
+                    fontSize="md"
                   >
                     <Link href="https://github.com/panaverse/panaverse-template-standard">
                       The Panaverse Full-Stack Template Standard
                     </Link>
                   </Text>
                  
-                    <Text pt="2" fontSize="md">
+                  <Heading size="sm">
                       Build QraphQL APIs
-                    </Text>
+                    </Heading>
             
                   <Text pt="2">
                     You will be assigned to build APIs for which you will sell
@@ -838,28 +828,7 @@ export default function DetailedCourse() {
               </CardBody>
             </Card>
           </TabPanel>
-
-          <TabPanel>
-            <Card w="100%" variant="filled" fill="blue.50">
-              <CardHeader
-                w="100%"
-                h="4"
-                bgGradient="linear(to-b, blue.300, blue.600,blue.700)"
-              ></CardHeader>
-              <CardBody>quarter 3</CardBody>
-            </Card>
-          </TabPanel>
-          <TabPanel>
-            <Card w="100%" variant="filled" fill="blue.50">
-              <CardHeader
-                w="100%"
-                h="4"
-                bgGradient="linear(to-b, blue.300, blue.600,blue.700)"
-              ></CardHeader>
-              <CardBody>quarter 4</CardBody>
-            </Card>
-          </TabPanel>
-        </TabPanels>
+ </TabPanels>
       </Tabs>
     </Box>
   );

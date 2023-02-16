@@ -1,13 +1,14 @@
 "use-client"
-import { Card, Heading, Text,Box,CardHeader,CardBody,Stack,StackDivider,CardFooter,Button } from "@chakra-ui/react"
+import { Card, Heading, Text,Box,CardHeader,CardBody,Stack,StackDivider,UnorderedList,ListItem
+} from "@chakra-ui/react"
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
+
 export default function Courses(){
-    const router = useRouter();
+    
     return(
-        <Box  height={{ base: '100%',  md: '50%', xl: '25%',  }} width={['95%']}
-        display='flex' flexDirection='column' padding='2' margin='8'  
-        borderWidth='1px' borderRadius='lg' borderColor='lightgray' borderTopWidth='10px' borderTopColor=' blue.500'> 
+        <Box  height={{ base: '100%',  md: '50%', xl: '25%',  }} width={['100%','100%','100%']}
+        display='flex' flexDirection='column' padding='2' marginTop='8'  
+      > 
   
   <Card>
   <CardHeader>
@@ -15,18 +16,20 @@ export default function Courses(){
   </CardHeader>
 
   <CardBody>
-    <Stack divider={<StackDivider />} spacing='4'>
+    <Stack >
       <Box>
         <Heading size='xs' textTransform='uppercase'>
         Every participant of the program will start by completing the following two core courses:
         </Heading>
-        <Text pt='2' fontSize='md'>
+        <UnorderedList>
+<ListItem>
          
 Quarter I (Core) CS-101: Object-Oriented Programming using TypeScript
-
+</ListItem>
+<ListItem>
 Quarter II (Core) W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform
-
-        </Text>
+</ListItem>
+      </UnorderedList>
       </Box>
       <Box>
         <Heading size='xs' textTransform='uppercase'>
@@ -133,12 +136,7 @@ Quarter IV AC-361: Embedded Programming using C and Rust
     
  </Stack>
   </CardBody>
-  <CardFooter >
-      <Button onClick={() => router.push('https://www.piaic.org/')} variant='solid' colorScheme='blue'>
-      Addmission Website
-      </Button>
-     
-    </CardFooter>
+  
 </Card>
 
 

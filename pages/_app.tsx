@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }:any) {
   return (
     <ChakraProvider theme={theme}>
       <Nav/>
-      <Component {...pageProps} />
+      <Component {...pageProps}  />
       <Footer/>
     </ChakraProvider>
   )
