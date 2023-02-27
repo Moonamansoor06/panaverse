@@ -1,4 +1,3 @@
-"use-client";
 import {
   Card,
   Heading,
@@ -18,12 +17,12 @@ import { ListItem, UnorderedList } from "@chakra-ui/react";
 export default function SpecializedTrack() {
   return (
     <Box
-    height={{ base: "100%", md: "50%", xl: "25%" }}
-    width={["100%","100%","100%"]}
-    display="flex"
-    flexDirection="column"
-    padding="2"
-    marginTop="8"
+      height={{ base: "100%", md: "50%", xl: "25%" }}
+      width={["100%", "100%", "100%"]}
+      display="flex"
+      flexDirection="column"
+      padding="2"
+      marginTop="8"
     >
       <Tabs variant="enclosed" colorScheme="green">
         <TabList>
@@ -158,7 +157,8 @@ export default function SpecializedTrack() {
                   <Heading size="sm">
                     Also check these links for latest listings:
                   </Heading>
-                  <UnorderedList listStyleType='none'
+                  <UnorderedList
+                    listStyleType="none"
                     p="4"
                     pt="2"
                     color="gray"
@@ -262,7 +262,7 @@ export default function SpecializedTrack() {
                   <Heading size="md">
                     Project Part 3: Create a Pako Token
                   </Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       By creating a token and related contracts, you’ll also
                       learn how to handle money sent to your contracts, which
@@ -287,7 +287,7 @@ export default function SpecializedTrack() {
                   <Heading size="md">
                     Project Part 4: Develop Crowd Sale Contract
                   </Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       This contract will be responsible for allowing users to
                       exchange ETH for our Pako Token. In order to do that we
@@ -318,7 +318,6 @@ export default function SpecializedTrack() {
                       textDecoration="underline"
                       fontSize="md"
                     >
-                      
                       https://docs.openzeppelin.com/contracts/4.x/crowdsales
                       however you will have to update the code to the latest
                       solidity version.
@@ -337,7 +336,7 @@ export default function SpecializedTrack() {
                   <Heading size="md">
                     Project Part 5: Trying it with MetaMask
                   </Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       While it’s always good to test your code, it’s often more
                       satisfying to see the results of your work wrapped in a
@@ -386,7 +385,7 @@ export default function SpecializedTrack() {
                   <Heading size="md">
                     Project Part 6: Trying it with Multisignature Wallets
                   </Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Read
                       https://www.coindesk.com/tech/2020/11/10/multisignature-wallets-can-keep-your-coins-safer-if-you-use-them-right/
@@ -395,11 +394,11 @@ export default function SpecializedTrack() {
                       Now use Gnosis Safe https://gnosis-safe.io/ with
                       multi-sigs to do what you did in the last part.
                     </ListItem>
-                  </UnorderedList >
+                  </UnorderedList>
                   <Heading size="md">
                     Project Part 7: Sending Tokens using Ethers.js
                   </Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Write a Typescript program to send Pako Token to some
                       friend’s address using Ethers.js.
@@ -408,11 +407,11 @@ export default function SpecializedTrack() {
                       You may follow this tutorial
                       https://ethereum.org/en/developers/tutorials/send-token-etherjs/
                     </ListItem>
-                  </UnorderedList >
+                  </UnorderedList>
                   <Heading size="md">
                     Project Part 8 Advance: Create, Deploy, Mint, and Sell a NFT
                   </Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Read this NFT tutorial series
                       https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft/
@@ -562,7 +561,7 @@ export default function SpecializedTrack() {
                   </Text>
 
                   <Heading size="md">Assignment 1:</Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Build a 3D Donut using Blender 3 as shown in these video
                       tutorials
@@ -570,7 +569,7 @@ export default function SpecializedTrack() {
                     </ListItem>
                   </UnorderedList>
                   <Heading size="md">Assignment 2:</Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Build a Viking Scene using Blender 3 as shown in chapter 2
                       of the Book [Blender by Example 2nd Edition
@@ -578,7 +577,7 @@ export default function SpecializedTrack() {
                     </ListItem>
                   </UnorderedList>
                   <Heading size="md">Assignment 3:</Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Modeling a Time Machine using Blender 3 as shown in
                       chapters 3 and 4 of the Book Blender by Example 2nd
@@ -587,7 +586,7 @@ export default function SpecializedTrack() {
                     </ListItem>
                   </UnorderedList>
                   <Heading size="md">Assignment 4:</Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Build a Modern Kitchen using Blender 3 as shown in
                       chapters 5, 6, and 7 of the Book Blender by Example 2nd
@@ -596,7 +595,7 @@ export default function SpecializedTrack() {
                     </ListItem>
                   </UnorderedList>
                   <Heading size="md">Assignment 5:</Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Illustrating an Alien Hero with Grease Pencil as shown in
                       chapter 8 of the Book Blender by Example 2nd Edition
@@ -604,7 +603,7 @@ export default function SpecializedTrack() {
                     </ListItem>
                   </UnorderedList>
                   <Heading size="md">Assignment 6:</Heading>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
                       Build a 3D Sword in the Stone using Blender 3 as shown in
                       these video tutorials
