@@ -23,9 +23,6 @@ export default function Nav() {
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/courses">Courses</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
             <BreadcrumbLink href="/coreCourses ">Core Tracks</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>

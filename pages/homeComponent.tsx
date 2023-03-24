@@ -15,7 +15,7 @@ export default function HomeComponent() {
   //const router=useRouter()
   return (
     <Box height="100%" width={["100%"]} marginTop={["8", "8", "9"]}>
-      <Flex direction={{ base: "column", lg: "row" }}>
+      <Flex direction={{ base: "column",md:"row", lg: "row" }}>
         <Card p="2" w={{ lg: "50%", sm: "100px" }}>
           <Heading size="md" p="2">
             Program of Studies
