@@ -65,7 +65,7 @@ export const spData = {
     },
     {
       SpName: "Network Programmability and Automation Specialization",
-      Description: "More than ever, network engineers are finding it challenging to complete their duties entirely manually. Network automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more adaptable and agile. This course teaches network engineers how to automate systems with code using a variety of technologies and tools, including Linux, Python, APIs, and Git.",
+      description: "More than ever, network engineers are finding it challenging to complete their duties entirely manually. Network automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more adaptable and agile. This course teaches network engineers how to automate systems with code using a variety of technologies and tools, including Linux, Python, APIs, and Git.",
       Quarter4: "NPA-351: CCNA 200-301 Certification",
       Quarter5: "NPA-361: Network Programmability and Automation",
       pic: "auto.jpg",
