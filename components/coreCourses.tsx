@@ -31,9 +31,13 @@ export default function CoreCourse() {
       padding="2"
     marginTop="8"
   >
-      <Stack margin="10">
-    <Heading size="2xl">Core Courses</Heading>
+    <Stack margin="10" alignItems="center">
+    <Heading  size="2xl">Core Courses</Heading>
     <Text size="md" marginBlock="8" fontWeight="bold">Common in all specializations</Text>
+    </Stack>
+      <Stack margin="10">
+    <Heading size="2xl"></Heading>
+    <Text size="md" marginBlock="8" fontWeight="bold"></Text>
     </Stack>
    <SimpleGrid minChildWidth="96" gap={2} id="core">
       {data.map((d, i) => {
