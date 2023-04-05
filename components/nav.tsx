@@ -20,13 +20,13 @@ export default function Nav() {
           fontSize={["x-small", "x-small", "medium"]}
         >
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            <BreadcrumbLink href="#home">Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/coreCourses ">Core Tracks</BreadcrumbLink>
+            <BreadcrumbLink href="#core ">Core Tracks</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/specializedTracks ">
+            <BreadcrumbLink href="#special ">
               Specialized Tracks
             </BreadcrumbLink>
           </BreadcrumbItem>

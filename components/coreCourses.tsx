@@ -1,14 +1,12 @@
 "use-client";
 import {
-  Card,
+  SimpleGrid,
+GridItem,
+Stack,
   Heading,
   Text,
   Box,
-  Container,
-  CardBody,
-  Stack,
-  StackDivider,
-  Divider,
+  
 } from "@chakra-ui/react";
 
 import Link from "next/link";
@@ -28,21 +26,31 @@ export default function CoreCourse() {
   const { data }: Data = coreData;
   return (
     <Box
-      height={{ base: "100%", md: "50%", xl: "25%" }}
-      width={["100%", "100%", "100%"]}
-      display="flex"
-      flexDirection={{base:"column",sm:"column",md:"row",lg:"row"}}
-      justifyContent="space-around"
-      alignItems="center"
+    height="100%"
+    width={["100%", "100%", "100%"]}
       padding="2"
-      marginTop="8"
-    >
+    marginTop="8"
+  >
+      <Stack margin="10">
+    <Heading size="2xl">Core Courses</Heading>
+    <Text size="md" marginBlock="8" fontWeight="bold">Common in all specializations</Text>
+    </Stack>
+   <SimpleGrid minChildWidth="96" gap={2} id="core">
       {data.map((d, i) => {
         return (
-          <Card marginTop="10" key={i}  width={400} height={500} boxShadow="dark-lg">
-            
+          
+          <GridItem 
+          margin={4}
+          marginTop="10"
+          key={i}
+          height="auto"
+          boxShadow="dark-lg"
+        >
               
-                <Image src={d.pic} alt="" height={200} width={400} objectFit="cover" />
+                <Image src={d.pic} alt="" 
+              height={300}
+              width="100%"
+              objectFit="cover" />
               
               <Stack  mt="10" padding="2" maxHeight={200} >
                 <Heading size="md">Quarter {d.no}</Heading>
@@ -52,10 +60,11 @@ export default function CoreCourse() {
                 <Text>{d.description}</Text>
               </Stack>
              
-            
-          </Card>
+            </GridItem>
+       
         );
       })}
-    </Box>
+       </SimpleGrid>
+       </Box>
   );
 }

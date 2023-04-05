@@ -8,19 +8,19 @@ import {
   Flex,
   Spacer,
 } from "@chakra-ui/react";
-import ImgRotator from "../components/imgRotator";
-import RouteButton from "../components/routeButton";
+import ImgRotator from "./imgRotator";
+import RouteButton from "./routeButton";
 //  import { useRouter } from 'next/navigation';
 export default function HomeComponent() {
   //const router=useRouter()
   return (
-    <Box height="100%" width={["100%"]} marginTop={["8", "8", "9"]}>
-      <Flex direction={{ base: "column",md:"row", lg: "row" }}>
-        <Card p="2" w={{ lg: "50%", sm: "100px" }}>
-          <Heading size="md" p="2">
+    <Box id="home" marginTop="20" marginBottom="24" height={{ base: "container.md",sm:"container.md",md:"container.md", lg: "container.md" }} width="100%" >
+      <Flex height="100%" alignItems="center" justifyContent="center" direction={{ base: "column",sm:"column",md:"row", lg: "row" }}>
+        <Card m="8" p="2" w={{ lg: "50%", md:'50%', sm: "100%" }}>
+          <Heading size="lg" p="2">
             Program of Studies
           </Heading>
-          <Text py="2" lineHeight="8" padding="2">
+          <Text size="lg" py="2" lineHeight="8" padding="2">
             This curriculum is intended for beginners who want to learn software
             development from the ground up. The first two quarters are shared by
             all specialities and are dedicated to studying Object-Oriented
@@ -42,7 +42,7 @@ export default function HomeComponent() {
           </CardFooter>
         </Card>
         <Spacer />
-        <Card p="2" pt="4" w={{ lg: "50%", sm: "100px" }}>
+        <Card p="2" pt="4" w={{ lg: "50%", md:'50%',sm: "100%" }}>
           <ImgRotator />
         </Card>
       </Flex>

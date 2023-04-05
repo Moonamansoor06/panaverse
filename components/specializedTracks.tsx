@@ -3,7 +3,7 @@ import {
   SimpleGrid,
   Heading,
   Text,
-  Grid,
+  Box,
   GridItem,
   Stack,
 } from "@chakra-ui/react";
@@ -22,10 +22,20 @@ interface SpecialData {
   }[];
 }
 
-export default function CoreCourse() {
+export default function SpecializedTracks() {
   const { data }: SpecialData = spData;
   return (
-    <SimpleGrid minChildWidth="96" gap={2}>
+    <Box
+    height="100%"
+    width={["100%", "100%", "100%"]}
+      padding="2"
+    marginTop="8"
+  >
+      <Stack margin="10" alignItems="center">
+    <Heading  size="2xl">Specialized Tracks</Heading>
+    <Text size="md" marginBlock="8" fontWeight="bold">After completing three core quarters every student must select one specialization</Text>
+    </Stack>
+    <SimpleGrid minChildWidth="96" gap={2} id="special">
       {data.map((d, i) => {
         return (
           <GridItem
@@ -57,5 +67,6 @@ export default function CoreCourse() {
         );
       })}
     </SimpleGrid>
+    </Box>
   );
 }
