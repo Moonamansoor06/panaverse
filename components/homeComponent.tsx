@@ -14,7 +14,7 @@ import RouteButton from "./routeButton";
 export default function HomeComponent() {
   //const router=useRouter()
   return (
-    <Box id="home" marginTop="20" marginBottom="24" height={{ base: "container.md",sm:"container.md",md:"container.md", lg: "container.md" }} width="100%" >
+    <Box id="home" marginTop="20" marginBottom="24" height={{ base: "100%",sm:"100%",md:"full", lg: "full" }} width="100%" >
       <Flex height="100%" alignItems="center" justifyContent="center" direction={{ base: "column",sm:"column",md:"row", lg: "row" }}>
         <Card m="8" p="2" w={{ lg: "50%", md:'50%', sm: "100%" }}>
           <Heading size="lg" p="2">
