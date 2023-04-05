@@ -56,7 +56,7 @@ export default function CoreCourse() {
               width="100%"
               objectFit="cover" />
               
-              <Stack  mt="10" padding="2" maxHeight={200} >
+              <Stack  mt="10" padding="2"  >
                 <Heading size="md">Quarter {d.no}</Heading>
                 <Text fontWeight="bold">Quarter Id:</Text>
                 <Text> {d.id} </Text>
