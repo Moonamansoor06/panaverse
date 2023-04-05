@@ -30,6 +30,7 @@ export default function CoreCourse() {
     width={["100%", "100%", "100%"]}
       padding="2"
     marginTop="8"
+    alignItems="center" justifyContent="center"
   >
     <Stack margin="10" alignItems="center">
     <Heading  size="2xl">Core Courses</Heading>
@@ -44,7 +45,7 @@ export default function CoreCourse() {
         return (
           
           <GridItem 
-          margin={4}
+   
           marginTop="10"
           key={i}
           height="auto"

@@ -5,16 +5,16 @@ import styles from './page.module.css'
 import HomeComponent from '@/components/homeComponent'
 import CoreCourse from '../components/coreCourses'
 import SpecializedTracks from '../components/specializedTracks'
-
+import { Container, Flex } from '@chakra-ui/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-   <div>
+   <Container width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }}>
     
    <HomeComponent/>
    <CoreCourse/>
    <SpecializedTracks/>
-   </div>
+   </Container>
   )
 }

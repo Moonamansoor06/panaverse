@@ -10,7 +10,7 @@ import { Image } from "@chakra-ui/react";
 export default function Nav() {
   return (
     <div>
-      <Flex direction="row" bgGradient="linear(to-r, green.200, blue.500)">
+      <Flex direction="row" width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }} bgGradient="linear(to-r, green.200, blue.500)">
         <Image src="/logo.png" alt="" boxSize={[10, 10, 20]} />
         <Spacer />
         <Breadcrumb
