@@ -26,21 +26,18 @@ export default function CoreCourse() {
   const { data }: Data = coreData;
   return (
     <Box
-    height="100%"
-    width={["100%", "100%", "100%"]}
+    height={{ base: "100%",sm:"100%",md:"full", lg: "full" }} 
+    width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }}
       padding="2"
     marginTop="8"
-    alignItems="center" justifyContent="center"
   >
-    <Stack margin="10" alignItems="center">
+    <Stack  alignItems="center">
     <Heading  size="2xl">Core Courses</Heading>
-    <Text size="md" marginBlock="8" fontWeight="bold">Common in all specializations</Text>
+    <Text size="md" marginBlock="8" fontWeight="bold">
+      Common in all specializations</Text>
     </Stack>
-      <Stack margin="10">
-    <Heading size="2xl"></Heading>
-    <Text size="md" marginBlock="8" fontWeight="bold"></Text>
-    </Stack>
-   <SimpleGrid minChildWidth="96" gap={2} id="core">
+   
+   <SimpleGrid minChildWidth="64" gap={2} id="core">
       {data.map((d, i) => {
         return (
           

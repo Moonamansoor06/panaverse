@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-   <Container width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }}>
+   <div style={{width:"100%"}}>
     
    <HomeComponent/>
    <CoreCourse/>
    <SpecializedTracks/>
-   </Container>
+   </div>
   )
 }

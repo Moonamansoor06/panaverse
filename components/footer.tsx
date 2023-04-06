@@ -21,6 +21,7 @@ export default function Footer() {
         <nav
           style={{
             padding: "8",
+            marginTop:"4",
             width: "30%",
             display: "flex",
             flexDirection: "row",

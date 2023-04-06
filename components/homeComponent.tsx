@@ -1,6 +1,9 @@
 import {
   CardFooter,
   Button,
+  SimpleGrid,
+  GridItem,
+  Stack,
   Box,
   Heading,
   Text,
@@ -17,9 +20,8 @@ export default function HomeComponent() {
     <Box id="home" marginTop="20" marginBottom="24" 
     height={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }} 
     width={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }} >
-      <Flex height="100%" alignItems="center" justifyContent="center"
-       direction={{ base: "column",sm:"column",md:"row", lg: "row" }}>
-        <Card   width={{  base: "100%",sm:"100%",md:"100%", lg: "100%" }}>
+      <SimpleGrid minChildWidth="64"  gap={2} id="special">
+        <GridItem  width={{  base: "100%",sm:"100%",md:"100%", lg: "100%" }}>
           <Heading size="lg" p="2">
             Program of Studies
           </Heading>
@@ -37,18 +39,18 @@ export default function HomeComponent() {
             classes complemented by online Zoom laboratories and recorded
             videos.
           </Text>
-          <CardFooter display="flex" alignItems="right" justifyContent="right">
+          <Stack display="flex" alignItems="right" justifyContent="right">
             <RouteButton
               buttonName="Admissiom website"
               url="https://www.piaic.org/"
             />
-          </CardFooter>
-        </Card>
-        <Spacer />
-        <Card p="2" pt="4"  width={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }}>
+          </Stack>
+        </GridItem>
+        
+        <GridItem p="2" pt="4"  width={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }}>
           <ImgRotator />
-        </Card>
-      </Flex>
+        </GridItem>
+      </SimpleGrid>
     </Box>
   );
 }

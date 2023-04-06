@@ -26,15 +26,18 @@ export default function SpecializedTracks() {
   const { data }: SpecialData = spData;
   return (
     <Box
-    height={{ base: "100%",sm:"100%",md:"full", lg: "full" }} width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }}
+    height={{ base: "100%",sm:"100%",md:"full", lg: "full" }} 
+    width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }}
       padding="2"
     marginTop="8"
   >
-      <Stack alignItems="center">
+      <Stack display="flex" justifyContent="center" alignItems="center">
     <Heading  size="2xl">Specialized Tracks</Heading>
-    <Text size="md" marginBlock="8" fontWeight="bold">After completing three core quarters every student must select one specialization</Text>
+    <Text  alignContent="center" size="md" marginBlock="8" fontWeight="bold">
+      After completing three core quarters every student must 
+      select one specialization</Text>
     </Stack>
-    <SimpleGrid minChildWidth="96" gap={2} id="special">
+    <SimpleGrid minChildWidth={["64","72","96"]}   gap={2} id="special">
       {data.map((d, i) => {
         return (
           <GridItem

@@ -9,10 +9,13 @@ import { Image } from "@chakra-ui/react";
 
 export default function Nav() {
   return (
-    <div>
-      <Flex direction="row" width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }} bgGradient="linear(to-r, green.200, blue.500)">
+    
+      <Flex direction="row"
+      justifyContent="space-between"
+      alignItems="stretch"
+      width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }} bgGradient="linear(to-r, green.200, blue.500)">
         <Image src="/logo.png" alt="" boxSize={[10, 10, 20]} />
-        <Spacer />
+        <Spacer width="20%" />
         <Breadcrumb
           paddingTop="5"
           paddingRight="1"
@@ -32,6 +35,6 @@ export default function Nav() {
           </BreadcrumbItem>
         </Breadcrumb>
       </Flex>
-    </div>
-  );
+    
+    );
 }
