@@ -29,9 +29,7 @@ export default function Nav() {
             <BreadcrumbLink href="#core ">Core Tracks</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#special ">
-              Specialized Tracks
-            </BreadcrumbLink>
+            <BreadcrumbLink href="#special ">Specialized Tracks</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </Flex>

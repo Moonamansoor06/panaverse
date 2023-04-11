@@ -25,19 +25,20 @@ interface SpecialData {
 export default function SpecializedTracks() {
   const { data }: SpecialData = spData;
   return (
-    <Box
-    height={{ base: "100%",sm:"100%",md:"full", lg: "full" }} 
-    width={{ [312]:"100%", base: "100%",sm:"100%",md:"full", lg: "full" }}
-      padding="2"
-    marginTop="8"
-  >
-      <Stack display="flex" justifyContent="center" alignItems="center">
-    <Heading  size="2xl">Specialized Tracks</Heading>
-    <Text  alignContent="center" size="md" marginBlock="8" fontWeight="bold">
-      After completing three core quarters every student must 
-      select one specialization</Text>
+    <Box  marginTop={["2","2","20","20"]} marginBottom={["2","40","60"]} 
+    height="auto" paddingTop={["2","40","40"]} 
+    width={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }} >
+
+      <Stack display="flex" justifyContent="center" alignItems="center" ml="2"
+          mr="2">
+    <Heading  size="2xl"id="special">Specialized Tracks</Heading>
+    <Text display="flex"
+     justifyContent="center" 
+     alignSelf="center" 
+     alignContent="center" size="md"  fontWeight="bold">
+      After completing three core quarters select specialization</Text>
     </Stack>
-    <SimpleGrid minChildWidth={["64","72","96"]}   gap={2} id="special">
+    <SimpleGrid minChildWidth={["64","72","96"]}    gap="6" id="special">
       {data.map((d, i) => {
         return (
           <GridItem
@@ -45,6 +46,9 @@ export default function SpecializedTracks() {
             key={i}
             height="auto"
             boxShadow="dark-lg"
+            p="2"
+            ml="2"
+          mr="2"
           >
             <Image
               src={d.pic}

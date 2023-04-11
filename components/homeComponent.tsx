@@ -7,9 +7,7 @@ import {
   Box,
   Heading,
   Text,
-  Card,
-  Flex,
-  Spacer,
+
 } from "@chakra-ui/react";
 import ImgRotator from "./imgRotator";
 import RouteButton from "./routeButton";
@@ -17,11 +15,11 @@ import RouteButton from "./routeButton";
 export default function HomeComponent() {
   //const router=useRouter()
   return (
-    <Box id="home" marginTop="20" marginBottom="24" 
-    height={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }} 
+    <Box id="home" marginTop={["2","2","20","20"]} marginBottom={["2","40","60"]} 
+    height="auto" paddingTop={["2","40","40"]} 
     width={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }} >
-      <SimpleGrid minChildWidth="64"  gap={2} id="special">
-        <GridItem  width={{  base: "100%",sm:"100%",md:"100%", lg: "100%" }}>
+      <SimpleGrid minChildWidth={["64","72","container.sm"]}    gap="6" id="special" >
+        <GridItem  >
           <Heading size="lg" p="2">
             Program of Studies
           </Heading>
@@ -39,7 +37,7 @@ export default function HomeComponent() {
             classes complemented by online Zoom laboratories and recorded
             videos.
           </Text>
-          <Stack display="flex" alignItems="right" justifyContent="right">
+          <Stack display="flex" alignSelf="center"  maxW="40">
             <RouteButton
               buttonName="Admissiom website"
               url="https://www.piaic.org/"
@@ -47,7 +45,7 @@ export default function HomeComponent() {
           </Stack>
         </GridItem>
         
-        <GridItem p="2" pt="4"  width={{ base: "100%",sm:"100%",md:"100%", lg: "100%" }}>
+        <GridItem p="2" pt="4" width="full">
           <ImgRotator />
         </GridItem>
       </SimpleGrid>
